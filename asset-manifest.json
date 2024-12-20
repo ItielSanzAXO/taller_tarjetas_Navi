@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/taller_tarjetas_Navi/static/css/main.a6b9b8d7.css",
+    "main.js": "/taller_tarjetas_Navi/static/js/main.f7d71ca8.js",
+    "static/js/488.dd9953f2.chunk.js": "/taller_tarjetas_Navi/static/js/488.dd9953f2.chunk.js",
+    "static/media/wallCard.png": "/taller_tarjetas_Navi/static/media/wallCard.03e5df9e067e934058d7.png",
+    "static/media/wallNav2.png": "/taller_tarjetas_Navi/static/media/wallNav2.7a5c5745746aa41feb9c.png",
+    "static/media/wallNavi1.jpg": "/taller_tarjetas_Navi/static/media/wallNavi1.b8109253a86bdd4b9f3c.jpg",
+    "index.html": "/taller_tarjetas_Navi/index.html",
+    "main.a6b9b8d7.css.map": "/taller_tarjetas_Navi/static/css/main.a6b9b8d7.css.map",
+    "main.f7d71ca8.js.map": "/taller_tarjetas_Navi/static/js/main.f7d71ca8.js.map",
+    "488.dd9953f2.chunk.js.map": "/taller_tarjetas_Navi/static/js/488.dd9953f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6b9b8d7.css",
+    "static/js/main.f7d71ca8.js"
+  ]
+}
