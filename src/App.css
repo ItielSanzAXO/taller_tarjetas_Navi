@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=RhymeTH:wght@400;700&family=Amiri:wght@400;700&display=swap');
+
+/* Estilos generales del cuerpo */
+body {
+  font-family: 'Amiri', serif;
+  font-size: 18px; /* Aumentar el tamaño de la letra */
+  background-color: #F5F4F2; /* Fondo del cuerpo */
+  font-weight: 400;
+}
+
+/* Estilos para los títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'RhymeTH', serif;
+  font-weight: 700;
+}
+
+/* Estilos generales de la aplicación */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #6BA3AF, #F5F4F2, #A8CED6, #E64663);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Asegurar que el footer esté en la parte inferior */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  width: 100%;
+  background-color: #6BA3AF;
+  padding: 5px 0; /* Reducir el grosor del navbar */
+  color: white;
+  text-align: center;
+}
+
+/* Estilos del encabezado */
+.App-header {
+  background: url('/public/assets/images/wallNav2.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  flex: 1; /* Permitir que el header crezca para ocupar el espacio disponible */
+  padding: 20px 0; /* Espacio entre el header y el formulario */
+  width: 100%; /* Asegurar que el header ocupe todo el ancho */
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    background: url('/public/assets/images/wallNavi1.jpg') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.App-link {
+  color: #A8CED6;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #000000; /* Color del texto en el formulario */
+  display: flex;
+  flex-direction: column; /* Asegurar que los elementos estén en columna */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  margin: 20px 0; /* Espacio entre el formulario y el footer */
+  width: 100%; /* Asegurar que el formulario ocupe todo el ancho */
+  max-width: 600px; /* Limitar el ancho máximo del formulario */
+  font-size: 20px; /* Aumentar el tamaño de la letra en el formulario */
+  font-weight: bold; /* Darle un grosor de letra al texto en el formulario */
+  box-sizing: border-box; /* Incluir el padding y el borde en el tamaño total */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px; /* Reducir el padding para dispositivos móviles */
+    font-size: 16px; /* Reducir el tamaño de la letra para dispositivos móviles */
+  }
+}
+
+/* Estilos de los inputs */
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px; /* Espaciado del botón */
+  border-radius: 5px;
+  border: none;
+  background-color: #E64663;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #B81B3D;
+}
+
+.loading-circle {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card-background {
+  background: url('/public/assets/images/wallCard.png') no-repeat center center;
+  background-size: cover;
+  width: 500px; /* Hacer el contenedor un poco más pequeño */
+  height: 900px; /* Hacer el contenedor un poco más pequeño */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .card-background {
+    width: 270px; /* Reducir el ancho a la mitad para dispositivos móviles */
+    height: 480px; /* Reducir la altura a la mitad para dispositivos móviles */
+  }
+
+  .card-container {
+    margin-top: 10px; /* Subir un poco los datos del card-container */
+  }
+
+  .message {
+    font-size: 18px; /* Reducir el tamaño de la letra para dispositivos móviles */
+  }
+
+  .coupon-text {
+    font-size: 16px; /* Reducir el tamaño de la letra para dispositivos móviles */
+  }
+
+  .coupon-image {
+    max-width: 80%; /* Reducir el tamaño de la imagen para dispositivos móviles */
+  }
+}
+
+/* Estilos del contenedor de la tarjeta */
+.card-container {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: -50px; /* Subir un poco el contenedor del card */
+  margin-left: -10px; /* Centrar el contenedor del card horizontalmente */
+  width: 100%; /* Asegurar que el contenedor ocupe todo el ancho de la tarjeta */
+  height: 100%; /* Asegurar que el contenedor ocupe toda la altura de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos del mensaje */
+.message {
+  margin-top: 10px; /* Subir un poco más el mensaje */
+  font-size: 24px; /* Aumentar el tamaño de la letra */
+  color: white; /* Cambiar el color del texto */
+  font-weight: bold; /* Hacer el texto en negrita */
+  padding: 15px; /* Añadir relleno alrededor del mensaje */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el mensaje */
+  max-width: 600px; /* Limitar el ancho máximo del mensaje */
+  margin-left: auto; /* Centrar el mensaje horizontalmente */
+  margin-right: auto; /* Centrar el mensaje horizontalmente */
+  white-space: pre-line; /* Mantener los saltos de línea */
+  font-family: 'Amiri', serif;
+}
+
+@media (max-width: 768px) {
+  .message {
+    font-size: 18px; /* Reducir el tamaño de la letra para dispositivos móviles */
+  }
+
+  .coupon-text {
+    font-size: 16px; /* Reducir el tamaño de la letra para dispositivos móviles */
+  }
+
+  .coupon-image {
+    max-width: 80%; /* Reducir el tamaño de la imagen para dispositivos móviles */
+  }
+}
+
+/* Estilos del texto del cupón */
+.coupon-text {
+  margin-top: 5px; /* Subir un poco más el texto del cupón */
+  font-size: 20px; /* Aumentar el tamaño de la letra */
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos de la imagen del cupón */
+.coupon-image {
+  margin-top: 10px; /* Subir un poco más la imagen del cupón */
+  max-width: 100%;
+  height: auto;
+  border-radius: 45px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9; /* Reducir la opacidad de la imagen */
+}
+
+/* Estilos del botón de descarga */
+.download-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #E64663;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #B81B3D;
+}
+
+/* Estilos del footer */
+.App-footer {
+  width: 100%;
+  padding: 2px 0; /* Reducir el grosor del footer */
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+/* Estilos de la imagen pequeña */
+.small-image {
+  width: 200px;
+  height: auto;
+}
+
+/* Animación del logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animación del círculo de carga */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
