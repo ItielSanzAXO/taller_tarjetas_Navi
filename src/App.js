@@ -8,7 +8,7 @@ function App() {
   const [message, setMessage] = useState('');
   const [couponImage, setCouponImage] = useState('');
   const [loading, setLoading] = useState(false);
-  const [headerText, setHeaderText] = useState('Juan tiene un regalo para ti, coloca tu nombre:');
+  const [headerText, setHeaderText] = useState('AxoPunk tiene un regalo para ti, coloca tu nombre:');
   const [error, setError] = useState('');
 
   // Función para generar el mensaje
