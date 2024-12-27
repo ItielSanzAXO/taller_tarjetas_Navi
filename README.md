@@ -1,6 +1,6 @@
-# 🎴 Proyecto de Tarjetas
+# 🎴 Proyecto de Tarjetas Navideñas
 
-Este proyecto es una aplicación para gestionar tarjetas de presentación. Permite crear, editar y eliminar tarjetas, así como buscar y filtrar tarjetas existentes.
+Este proyecto es una aplicación para generar tarjetas navideñas personalizadas. Permite crear y descargar tarjetas con un mensaje personalizado y un cupón. Es parte del taller "Crea tus tarjetas navideñas" impartido por AxoPunk.
 
 ## 🚀 Instalación
 
